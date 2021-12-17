@@ -13,7 +13,8 @@ namespace telaPedido
 {
     public partial class Form1 : Form
     {
-        public double total;
+        // DEFININDO AS VARIAVEIS GLOBAIS
+	public double total;
         public Form1()
         {
             InitializeComponent();
