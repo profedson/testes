@@ -17,6 +17,7 @@ namespace telaPedido
 	public double total;
         public Form1()
         {
+			// INICIALIZANDO OS COMPONENTES DA PÁGINA
             InitializeComponent();
         }
 
@@ -43,6 +44,7 @@ namespace telaPedido
 
         private void dgvProduto_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+			// CONFIGURANDO O GRID DE VISUALIZAÇÃO DOS DADOS
             double valorUnitario = Convert.ToDouble(dgvProduto.Rows[e.RowIndex].Cells[1].Value);
             double quantidade = Convert.ToDouble(txtQuantidade.Text);
             txtDescricao.Text = Convert.ToString(dgvProduto.Rows[e.RowIndex].Cells[0].Value);
